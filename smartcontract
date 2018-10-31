@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 // 'FNCC' token contract
 //
-// Deployed to : 0x0A2B274Bcb01A62d25Ad4f8e69c82ED83852C48F
+// Deployed to : 0x712075a546EE0d9FeAf75cbD17ce6804E82522fF
 // Symbol      : FNCC
 // Name        : FREE NATION COIN COMMUNITY
 // Total supply: 10000000000000 
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FREENATIONCOIN is ERC20Interface, Owned, SafeMath {
+contract FRCC is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -117,8 +117,8 @@ contract FREENATIONCOIN is ERC20Interface, Owned, SafeMath {
         name = "FREE NATION COIN COMMUNITY";
         decimals = 18;
         _totalSupply = 10000000000000;
-        balances[0x0A2B274Bcb01A62d25Ad4f8e69c82ED83852C48F] = _totalSupply;
-        emit Transfer(address(0), 0x0A2B274Bcb01A62d25Ad4f8e69c82ED83852C48F, _totalSupply);
+        balances[0x712075a546EE0d9FeAf75cbD17ce6804E82522fF] = _totalSupply;
+        emit Transfer(address(0), 0x712075a546EE0d9FeAf75cbD17ce6804E82522fF, _totalSupply);
     }
 
 
